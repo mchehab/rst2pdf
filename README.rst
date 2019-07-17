@@ -1,3 +1,8 @@
+My Fork
+========================================
+This fork was done to make it work with Sphinx3 + Python3.x
+
+
 rst2pdf: Use a text editor. Make a PDF.
 ========================================
 
