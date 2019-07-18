@@ -54,7 +54,10 @@ from sphinx import addnodes
 from sphinx.builders import Builder
 from sphinx.util.console import darkgreen, red
 from sphinx.util import SEP
-from sphinx.errors import NoUri
+try:
+    from sphinx.errors import NoUri
+except:
+    from sphinx.environment import NoUri
 from sphinx.environment.adapters.indexentries import IndexEntries
 from sphinx.locale import admonitionlabels, versionlabels
 if sphinx.__version__ >= '1.':
