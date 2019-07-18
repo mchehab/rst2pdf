@@ -365,7 +365,9 @@ class PDFBuilder(Builder):
                         if doc[0]==indexname:
                             return "pdf:"+doc[1]+'.pdf'
             # No idea
-            raise NoUri
+            print("URI not found: %s" % docname)
+            return ""
+#            raise NoUri
         else: # Local link
             return ""
 

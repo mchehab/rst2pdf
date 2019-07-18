@@ -23,6 +23,7 @@ try:
     from .svgimage import SVGImage
 except ModuleNotFoundError:
     # svglib may optionally not be installed, which causes this error
+    print("NOTE: SVGIMAGE IS NOT INSTALLED!!!")
     pass
 
 # This assignment could be overridden by an extension module
