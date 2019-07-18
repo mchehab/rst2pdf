@@ -80,6 +80,9 @@ class PDFBuilder(Builder):
         self.document_data = []
         self.spinx_logger = sphinx.util.logging.getLogger(__name__)
 
+    def warn(self, message):
+        self.spinx_logger.warning(message)
+
     def write(self, *ignored):
 
         self.init_document_data()
